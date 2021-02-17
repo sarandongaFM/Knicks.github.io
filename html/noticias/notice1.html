@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York Knicks | FA Period</title>
+    <link  rel="icon"   href="../../img/user1.png" type="image/png" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/styleNoticeX.css">
+</head>
+<body>
+    
+    <section class="section">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                  <div class="testimonialBox">
+                    <a href="#" class="linkNotice">Anterior</a> 
+                    <a href="./notice2.html" class="linkNotice2">Siguiente</a>
+                    <div class="content">
+                        <h3>Llegó Richardson</h3>
+                        <p>Los Knicks llegaban al periodo de FA con unos 30M $ de cap y tan solo Gobert, Gallinari, Hachimura, PJ Washington y Langford en plantilla. Había que hacer frente a la renovación de Middleton que sería de las primeras así que se llevaría una gran suma salarial y haría que el equipo se posicionara sobre el límite en los primeros días imposibilitando traer más jugadores que no vinieran por el mínimo.
+                        Por lo cual, había dos opciones. La primera consistía en lanzarle el máximo a Middleton pero también a Murray, Ingram, Brogdon o cualquier jugador interesante y rezar para que firmara antes que Middleton y así vinieran los dos jugadores, aunque dejaría escaso espacio hasta el límite salarial.
+                        </p>
+                        <div class="details">
+                            <div class="imgBx">
+                                <img src="../../img/notice2.jpeg" alt="">
+                            </div>
+                        </div>
+                        <br>
+                        <p>La segunda opción era por la que finalmente se optó y consistió en buscar un PG/SG que viniera a cambio de alguna ronda o Hachimura/PJ Washington. Finalmente surgió la posibilidad de Josh Richardson que llegará desde Atlanta a cambio de la primera ronda de esta temporada. El equipo con este movimiento adhiere una pieza importante reforzando el puesto de escolta y haciendo un quinteto bastante interesante a falta de encontrar un base. Cobrará unos 14M $ esta temporada y la que viene. Los Knicks seguirán buscando efectivos en esta FA hasta terminar un equipo que podría llegar a aspirar con el anillo si encuentran la táctica que les haga ganar.</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+    </section>
+
+    <div class="menuToggle" onclick="ToggleMenu()"></div>
+    <div class="navigation">
+        
+        <div class="navArea">
+            <ul>
+                <li>
+                    <a href="../../index.html" onmouseenter="changeImage('../../img/img1.jpg')">Inicio</a>
+                </li>
+                <li>
+                    <a href="../noticias/index.html" onmouseenter="changeImage('../../img/img2.jpg')">Noticias</a>
+                </li>
+                <li>
+                    <a href="../equipo/index.html" onmouseenter="changeImage('../../img/img3.jpg')">Equipo</a>
+                </li>
+                <li>
+                    <a href="../construccion/index.html" onmouseenter="changeImage('../../img/img4.jpg')">Cuerpo Técnico</a>
+                </li>
+                <li>
+                    <a href="../construccion/index.html" onmouseenter="changeImage('../../img/img7.jpg')">Historia</a>
+                </li>
+                <li>
+                    <a href="../construccion/index.html" onmouseenter="changeImage('../../img/img6.jfif')">Futuro</a>
+                </li>
+            </ul>
+        </div>
+        <div class="imgArea">
+            <img src="../../img/img1.jpg" id="slider" alt="">
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 0, //estaba a 50
+            stretch: 0,
+            depth: 100,
+            modifier: 2, //estaba a 1
+            slideShadows: true,
+          },
+          /*loop: true,*/
+          pagination: {
+             el: '.swiper-pagination',
+          },
+        });
+
+        function changeImage(anything) {
+            document.getElementById('slider').src = anything;
+        }
+
+        function ToggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            const section = document.querySelector('.section');
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+            section.classList.toggle('active')
+        }
+      </script>
+</body>
+</html>

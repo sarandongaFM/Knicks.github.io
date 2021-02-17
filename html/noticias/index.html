@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York Knicks | Noticias</title>
+    <link  rel="icon"   href="../../img/user1.png" type="image/png" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/styleNoticias.css">
+</head>
+<body>
+    
+    <section class="section">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                  <div class="testimonialBox">
+                    <img src="../../img/quote.png" class="quote" alt="">
+                    <a href="./notice2.html" class="linkNotice">Leer Más</a>
+                    <div class="content">
+                        <p>Pocas firmas por parte de los New York Knicks, pero los jugadores que han firmado eran los que más faltan hacían. Tras la llegada de Richardson, el objetivo número 1 era sin duda renovar a Khris Middleton. El alero renovará...</p>
+                        <div class="details">
+                            <div class="imgBx">
+                                <img src="../../img/user1.png" alt="">
+                            </div>
+                            <h3>Linsanity<br><span>GM New York Knicks</span><br>FA Period<br><span>17 Febrero 21</span></h3>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonialBox">
+                  <img src="../../img/quote.png" class="quote" alt="">
+                  <a href="./notice1.html" class="linkNotice">Leer Más</a>
+                    <div class="content">
+                        <p>Los Knicks llegaban al periodo de FA con unos 30M $ de cap y tan solo Gobert, Gallinari, Hachimura, PJ Washington y Langford en plantilla. Había que hacer frente a la renovación de Middleton que sería de las primeras así...</p>
+                        <div class="details">
+                            <div class="imgBx">
+                                <img src="../../img/user1.png" alt="">
+                            </div>
+                            <h3>Linsanity<br><span>GM New York Knicks</span><br>Llegó Richardson<br><span>16 Febrero 21</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div><!--
+            <div class="swiper-slide">
+                <div class="testimonialBox">
+                  <img src="quote.png" class="quote" alt="">
+                  <div class="content">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque error dolorum, laudantium deleniti inventore sequi facilis neque molestias nemo? Ratione similique autem tempora repellat quo, ea temporibus consequatur laborum adipisci.</p>
+                      <div class="details">
+                          <div class="imgBx">
+                              <img src="user3.jpg" alt="">
+                          </div>
+                          <h3>Gianluigi Buffon<br><span>Mejor portero italiano</span></h3>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="testimonialBox">
+                  <img src="quote.png" class="quote" alt="">
+                  <div class="content">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque error dolorum, laudantium deleniti inventore sequi facilis neque molestias nemo? Ratione similique autem tempora repellat quo, ea temporibus consequatur laborum adipisci.</p>
+                      <div class="details">
+                          <div class="imgBx">
+                              <img src="user4.jpg" alt="">
+                          </div>
+                          <h3>Alessandro Del Piero<br><span>Máximo goleador de la Juventus</span></h3>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="testimonialBox">
+                  <img src="quote.png" class="quote" alt="">
+                  <div class="content">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque error dolorum, laudantium deleniti inventore sequi facilis neque molestias nemo? Ratione similique autem tempora repellat quo, ea temporibus consequatur laborum adipisci.</p>
+                      <div class="details">
+                          <div class="imgBx">
+                              <img src="user5.jpg" alt="">
+                          </div>
+                          <h3>Zinedine Zidane<br><span>Balón de Oro</span><br>GM Knicks<br><span>17 Febrero 21</span></h3>
+                      </div>
+                  </div>
+                </div>
+            </div> -->
+          </div>
+    </section>
+
+    <div class="menuToggle" onclick="ToggleMenu()"></div>
+    <div class="navigation">
+        
+        <div class="navArea">
+            <ul>
+                <li>
+                    <a href="../../index.html" onmouseenter="changeImage('../../img/img1.jpg')">Inicio</a>
+                </li>
+                <li>
+                    <a href="../noticias/index.html" onmouseenter="changeImage('../../img/img2.jpg')">Noticias</a>
+                </li>
+                <li>
+                    <a href="../equipo/index.html" onmouseenter="changeImage('../../img/img3.jpg')">Equipo</a>
+                </li>
+                <li>
+                    <a href="../construccion/index.html" onmouseenter="changeImage('../../img/img4.jpg')">Cuerpo Técnico</a>
+                </li>
+                <li>
+                    <a href="../construccion/index.html" onmouseenter="changeImage('../../img/img7.jpg')">Historia</a>
+                </li>
+                <li>
+                    <a href="../construccion/index.html" onmouseenter="changeImage('../../img/img6.jfif')">Futuro</a>
+                </li>
+            </ul>
+        </div>
+        <div class="imgArea">
+            <img src="../../img/img1.jpg" id="slider" alt="">
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 0, //estaba a 50
+            stretch: 0,
+            depth: 100,
+            modifier: 2, //estaba a 1
+            slideShadows: true,
+          },
+          /*loop: true,*/
+          pagination: {
+             el: '.swiper-pagination',
+          },
+        });
+
+        function changeImage(anything) {
+            document.getElementById('slider').src = anything;
+        }
+
+        function ToggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            const section = document.querySelector('.section');
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+            section.classList.toggle('active')
+        }
+      </script>
+</body>
+</html>

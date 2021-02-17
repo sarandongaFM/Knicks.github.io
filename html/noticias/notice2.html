@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York Knicks | FA Period</title>
+    <link  rel="icon"   href="../../img/user1.png" type="image/png" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/styleNoticeX.css">
+</head>
+<body>
+    
+    <section class="section">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                  <div class="testimonialBox">
+                    <a href="./notice1.html" class="linkNotice">Anterior</a> 
+                    <a href="#" class="linkNotice2">Siguiente</a>
+                    <div class="content">
+                        <h3>FA Period</h3>
+                        <p>Pocas firmas por parte de los New York Knicks, pero los jugadores que han firmado eran los que más faltan hacían. Tras la llegada de Richardson, el objetivo número 1 era sin duda renovar a Khris Middleton. El alero renovará por 5 años (el último Team Option) y 180M $ en total, de los cuales 32'7M $ serán los que cobre esta temporada. Middleton y Gobert son el presente de la franquicia y hasta que Hachimura, PJ o algún rookie den un paso al frente seguirán siendo la cara de la franquicia. En el quinto día llegó el segundo fichaje de los Knicks al firmarle un contrato por el mínimo a dos años al escolta PJ Dozier que está empezando a tener un pequeño hueco en los Nuggets, esperemos que no pese la decisión el año que viene.</p>
+                        <div class="details">
+                            <div class="imgBx">
+                                <img src="../../img/noticia1.jpg" alt="">
+                            </div>
+                        </div>
+                        <br>
+                        <p>Con el sexto día llegó una nueva firma. De nuevo fue un jugador de la franquicia y no un nuevo fichaje, pero se consiguió renovar una temporada más a Satoransky a cambio de 6'5M $. El checo se perdió los primeros partidos el año pasado y el equipo no supo competir sin él ante la falta de organizadores de juego. Esto se sabía en la franquicia y por tanto llegó en el octavo día de FA otro base, el joven Kris Dunn en la que fue una grata sorpresa ya que firma por el mínimo. Tras 4 temporadas en Orlando, éstos no han querido saber más de él y los Knicks consiguieron adelantarse a sus demás pretendientes haciéndose con el jugador. Este año parece que no quedará huérfano el puesto de base. No ha habido más llegadas pero se está intentado firmar a 3 jugadores más, uno debería de ser un center que le de descanso a Gobert y los otros dos deberían de cubrir las posiciones de SG/SF/PF. No obstante puede que se acuda al mercado libre con la agencia FA ya concluída o se busque un trade si no se encuentran a los jugadores del nivel indicado.</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+    </section>
+
+    <div class="menuToggle" onclick="ToggleMenu()"></div>
+    <div class="navigation">
+        
+        <div class="navArea">
+            <ul>
+                <li>
+                    <a href="../../index.html" onmouseenter="changeImage('../../img/img1.jpg')">Inicio</a>
+                </li>
+                <li>
+                    <a href="../noticias/index.html" onmouseenter="changeImage('../../img/img2.jpg')">Noticias</a>
+                </li>
+                <li>
+                    <a href="../equipo/index.html" onmouseenter="changeImage('../../img/img3.jpg')">Equipo</a>
+                </li>
+                <li>
+                    <a href="../construccion/index.html" onmouseenter="changeImage('../../img/img4.jpg')">Cuerpo Técnico</a>
+                </li>
+                <li>
+                    <a href="../construccion/index.html" onmouseenter="changeImage('../../img/img7.jpg')">Historia</a>
+                </li>
+                <li>
+                    <a href="../construccion/index.html" onmouseenter="changeImage('../../img/img6.jfif')">Futuro</a>
+                </li>
+            </ul>
+        </div>
+        <div class="imgArea">
+            <img src="../../img/img1.jpg" id="slider" alt="">
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 0, //estaba a 50
+            stretch: 0,
+            depth: 100,
+            modifier: 2, //estaba a 1
+            slideShadows: true,
+          },
+          /*loop: true,*/
+          pagination: {
+             el: '.swiper-pagination',
+          },
+        });
+
+        function changeImage(anything) {
+            document.getElementById('slider').src = anything;
+        }
+
+        function ToggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            const section = document.querySelector('.section');
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+            section.classList.toggle('active')
+        }
+      </script>
+</body>
+</html>
