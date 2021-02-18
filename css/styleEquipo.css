@@ -10,8 +10,10 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(0deg, #df9712, #ffffff);
+    background: url(../img/knicks1.jpg);
     background-attachment: fixed;
+    /*background: linear-gradient(0deg, #df9712, #ffffff);
+    background-attachment: fixed;*/
 }
 .container {
     position: relative;
